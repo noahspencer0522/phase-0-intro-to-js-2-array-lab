@@ -12,6 +12,19 @@ function destructivelyRemoveFirstCat(){
     cats.shift()
 }
 function appendCat(name){
-    let newCat =[cats, name]
-    
+    let newCat =[...cats, name]
+    return newCat
 }
+function prependCat(name){
+    let oldCat =[name, ...cats]
+    return oldCat
+}
+function removeLastCat(){
+    let lastCat =[...cats]
+    lastCat.pop()
+    return lastCat
+}
+function removeFirstCat(){
+let firstCat =[...cats]
+firstCat.shift()
+return firstCat}
